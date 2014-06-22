@@ -2,6 +2,14 @@
 
 	margin: 0;
 	padding: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+body {
+
+	padding: 10px 0 0 0;
 
 }
 
@@ -27,5 +35,48 @@ form {
 	float: left;
 	clear: both;
 	margin: 0 0 10px 0;
+
+}
+
+.select-wrap {
+
+	width: 20%;
+	position: relative;
+
+	select {
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 2;
+		opacity: 0;
+		display: block;
+		-webkit-appearance: menulist-button;
+
+	}
+
+}
+
+.select {
+
+	border: 1px solid #CECECE;
+	padding: 5px;
+	font-family: Arial;
+	font-size: 12px;
+	width: 100%;
+	border-radius: 6px;
+
+	&:after {
+
+		content: url(../img/select-arrow.png);
+		position: absolute;
+		top: 8px;
+		bottom: 0;
+		right: 10px;
+
+	}
 
 }
