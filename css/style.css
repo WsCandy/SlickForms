@@ -1,3 +1,19 @@
 * {
   margin: 0;
   padding: 0; }
+
+.centre-wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  overflow: hidden; }
+
+form {
+  float: left;
+  width: 100%; }
+
+.field-wrap {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 0 0 10px 0; }
