@@ -16,7 +16,10 @@
 
 			initialise: function() {
 
-				var elements = document.getElementsByTagName('select');
+				core_funcs['select'].handler();
+				// core_funcs['checkbox'].handler();
+				// core_funcs['radio'].handler();
+				// core_funcs['file'].handler();
 
 			},
 
@@ -24,13 +27,19 @@
 
 				handler: function() {
 
-					alert('select');
+					var elements = document.getElementsByTagName('select');
+
+					for (var i = 0; i < elements.length; i++) {
+
+						core_funcs['select'].wrap(elements[i]);
+
+					}
 
 				},
 
-				wrap: function() {
+				wrap: function(element) {
 
-
+					element.outerHTML = '<div class="select-wrap">'+element.outerHTML+'<div class="select">'+element.value+'</div></div>';
 
 				},
 
@@ -46,13 +55,21 @@
 
 				handler: function() {
 
-					alert('checkbox');
+					var elements = document.getElementsByTagName('input');
+
+					for (var i = 0; i < elements.length; i++) {
+
+						if(elements[i].getAttribute('type') != 'checkbox') continue;
+
+						core_funcs['checkbox'].wrap(elements[i]);
+
+					}
 
 				},
 
-				wrap: function() {
+				wrap: function(element) {
 
-
+					console.log(element);
 
 				},
 
@@ -68,11 +85,12 @@
 
 				handler: function() {
 
-					alert('radio');
+					var elements = document.getElementsByTagName('select');
 
 				},
 
 				wrap: function() {
+
 
 
 				},
@@ -89,11 +107,12 @@
 
 				handler: function() {
 
-					alert('file');
+					var elements = document.getElementsByTagName('select');
 
 				},
 
 				wrap: function() {
+
 
 
 				},
@@ -114,6 +133,10 @@
 
 	window.slickForms = slickForms;
 
-})();
+	document.addEventListener('DOMContentLoaded', function() {
 
-var slick = new slickForms();
+		var slick = new slickForms();
+		
+	});
+
+})();
