@@ -140,13 +140,10 @@
 
 	}
 
-	window.slickForms = slickForms;
+	document.addEventListener('DOMContentLoaded', function() {
 
+		window.slick = new slickForms();
+		
+	});
 
 })();
-
-document.addEventListener('DOMContentLoaded', function() {
-
-	window.slick = new slickForms();
-	
-});
