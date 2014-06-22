@@ -2,30 +2,118 @@
 	
 	'use strict';
 
-	var slickForms = function() {
+	function slickForms() {
 
 		var self = this;
 
-		self.public_methods = {
+		self.reSkin = function(element) {
 
-
+			core_funcs[element].handler();
 
 		}
 
-		var private_methods = {
+		var core_funcs = {
 
 			initialise: function() {
 
-				
+				var elements = document.getElementsByTagName('select');
+
+			},
+
+			select: {
+
+				handler: function() {
+
+					alert('select');
+
+				},
+
+				wrap: function() {
+
+
+
+				},
+
+				bind: function() {
+
+
+
+				}
+
+			},
+
+			checkbox: {
+
+				handler: function() {
+
+					alert('checkbox');
+
+				},
+
+				wrap: function() {
+
+
+
+				},
+
+				bind: function() {
+
+
+
+				}
+
+			},
+
+			radio: {
+
+				handler: function() {
+
+					alert('radio');
+
+				},
+
+				wrap: function() {
+
+
+				},
+
+				bind: function() {
+
+
+
+				}
+
+			},
+
+			file: {
+
+				handler: function() {
+
+					alert('file');
+
+				},
+
+				wrap: function() {
+
+
+				},
+
+				bind: function() {
+
+
+
+				}
 
 			}
 
 		}
 
-		private_methods.initialise();
+		core_funcs.initialise();
 
 	}
-	
-	var slick = new slickForms();
+
+	window.slickForms = slickForms;
 
 })();
+
+var slick = new slickForms();
