@@ -31,7 +31,10 @@
 
 					for (var i = 0; i < elements.length; i++) {
 
+						if(elements[i].parentNode.classList.contains('select-wrap')) continue;
+
 						core_funcs['select'].wrap(elements[i]);
+						core_funcs['select'].bind(elements[i]);
 
 					}
 
@@ -43,9 +46,15 @@
 
 				},
 
-				bind: function() {
+				bind: function(element) {
 
+					element.onchange = function() {
 
+						var dummySelect = element.parentNode.getElementsByClassName('select')[0];
+
+						dummySelect.innerHTML = String(element.value);
+
+					}
 
 				}
 
@@ -133,10 +142,11 @@
 
 	window.slickForms = slickForms;
 
-	document.addEventListener('DOMContentLoaded', function() {
-
-		var slick = new slickForms();
-		
-	});
 
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	window.slick = new slickForms();
+	
+});
