@@ -17,7 +17,7 @@
 			initialise: function() {
 
 				core_funcs['select'].handler();
-				// core_funcs['checkbox'].handler();
+				core_funcs['checkbox'].handler();
 				// core_funcs['radio'].handler();
 				// core_funcs['file'].handler();
 
