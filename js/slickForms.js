@@ -94,7 +94,7 @@
 
 				handler: function() {
 
-					var elements = document.getElementsByTagName('select');
+					
 
 				},
 
@@ -116,7 +116,7 @@
 
 				handler: function() {
 
-					var elements = document.getElementsByTagName('select');
+
 
 				},
 
