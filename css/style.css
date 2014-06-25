@@ -26,17 +26,18 @@ form {
 .select-wrap {
   width: 20%;
   position: relative; }
-  .select-wrap select {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    opacity: 0;
-    display: block;
-    -webkit-appearance: menulist-button; }
+
+select {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  display: block;
+  -webkit-appearance: menulist-button; }
 
 .select {
   border: 1px solid #CECECE;
