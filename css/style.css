@@ -39,6 +39,9 @@ select {
   display: block;
   -webkit-appearance: menulist-button; }
 
+input[type="checkbox"] {
+  opacity: 0; }
+
 .select {
   border: 1px solid #CECECE;
   padding: 5px;
