@@ -10,16 +10,23 @@
 
 			core_funcs[element].handler();
 
+			return 'All wrapped up, slick!';
+
 		}
 
 		var core_funcs = {
 
 			initialise: function() {
 
-				core_funcs['select'].handler();
-				core_funcs['checkbox'].handler();
-				// core_funcs['radio'].handler();
-				// core_funcs['file'].handler();
+				for(var key in core_funcs) {
+
+					if(core_funcs[key]['handler']) {
+
+						core_funcs[key]['handler']();
+
+					}
+
+				}
 
 			},
 
