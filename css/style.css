@@ -37,7 +37,7 @@ select {
   z-index: 2;
   opacity: 0;
   display: block;
-  -webkit-appearance: menulist-button; }
+  -webkit-appearance: none; }
 
 input[type="checkbox"] {
   opacity: 0; }
