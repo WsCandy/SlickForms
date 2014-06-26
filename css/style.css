@@ -5,7 +5,8 @@
   box-sizing: border-box; }
 
 body {
-  padding: 15px 15px 0 15px; }
+  padding: 15px 15px 0 15px;
+  background: #FAFAFA; }
 
 .centre-wrap {
   margin: 0 auto;
@@ -71,7 +72,9 @@ form {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background: #CECECE;
-  -webkit-transition: 0.25s; }
+  background: #a8e6f6;
+  -webkit-transition: 0.5s;
+  -webkit-transform: scale(0.25); }
   .checkbox-mark.active {
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transform: scale(1); }
