@@ -18,11 +18,11 @@
 
 			initialise: function() {
 
-				for(var key in core_funcs) {
+				for(var type in core_funcs) {
 
-					if(core_funcs[key]['handler']) {
+					if(core_funcs[type]['handler']) {
 
-						core_funcs[key]['handler']();
+						core_funcs[type]['handler']();
 
 					}
 
