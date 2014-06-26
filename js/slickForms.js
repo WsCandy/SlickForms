@@ -123,13 +123,21 @@
 
 				handler: function() {
 
+					var elements = document.getElementsByTagName('input');
 
+					for(var i = 0; i < elements.length; i++) {
+
+						if(elements[i].getAttribute('type') != 'radio' || elements[i].parentNode.classList.contains('radio-wrap')) continue;						
+
+						core_funcs['radio'].wrap(elements[i]);
+
+					}
 
 				},
 
-				wrap: function() {
+				wrap: function(element) {
 
-
+					element.outerHTML = '<div class="radio-wrap">'+element.outerHTML+'<div class="radio-marker"></div></div>';
 
 				},
 
