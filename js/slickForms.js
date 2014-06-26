@@ -137,7 +137,7 @@
 
 				wrap: function(element) {
 
-					element.outerHTML = '<div class="radio-wrap">'+element.outerHTML+'<div class="radio-marker"></div></div>';
+					element.outerHTML = '<div class="radio-wrap">'+element.outerHTML+'<div class="radio-mark"></div></div>';
 
 				},
 
