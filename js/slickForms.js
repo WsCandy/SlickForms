@@ -75,9 +75,11 @@
 
 					for (var i = 0; i < elements.length; i++) {
 
-						if(elements[i].getAttribute('type') != 'checkbox') continue;
+						if(elements[i].getAttribute('type') != 'checkbox' || elements[i].parentNode.classList.contains('checkbox-wrap')) continue;
 
 						core_funcs['checkbox'].wrap(elements[i]);
+						core_funcs['checkbox'].check(elements[i]);
+						core_funcs['checkbox'].bind(elements[i]);
 
 					}
 
@@ -85,15 +87,35 @@
 
 				wrap: function(element) {
 
-					console.log(element);
+					element.outerHTML = '<div class="checkbox-wrap">'+element.outerHTML+'<div class="checkbox-mark"></div></div>';
 
 				},
 
-				bind: function() {
+				bind: function(element) {
 
+					element.onchange = function() {
 
+						core_funcs['checkbox'].check(element);
 
-				}
+					}
+
+				},
+
+				check: function(element) {
+
+					var marker = element.parentNode.getElementsByClassName('checkbox-mark')[0];
+
+					if(element.checked) {
+
+						marker.classList.add('active');
+
+					} else {
+
+						marker.classList.remove('active');
+
+					}
+
+				} 
 
 			},
 
@@ -101,7 +123,7 @@
 
 				handler: function() {
 
-					
+
 
 				},
 
