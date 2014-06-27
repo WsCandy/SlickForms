@@ -28,11 +28,7 @@
 
 				for(var type in core_funcs) {
 
-					if(core_funcs[type]['handler']) {
-
-						core_funcs[type]['handler']();
-
-					}
+					if(core_funcs[type]['handler'])	core_funcs[type]['handler']();
 
 				}
 
