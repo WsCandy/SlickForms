@@ -4,9 +4,7 @@
 
 	function slickForms() {
 
-		var self = this;
-
-		self.reSkin = function(element) {
+		this.reSkin = function(element) {
 
 			if(element) {
 
