@@ -134,6 +134,8 @@
 						if(elements[i].getAttribute('type') != 'radio' || elements[i].parentNode.classList.contains('radio-wrap')) continue;						
 
 						core_funcs['radio'].wrap(elements[i]);
+						core_funcs['radio'].check(elements[i]);
+						core_funcs['radio'].bind(elements[i]);
 
 					}
 
@@ -145,9 +147,35 @@
 
 				},
 
-				bind: function() {
+				bind: function(element) {
 
+					var elementGroup = document.getElementsByName(element.getAttribute('name'));
+					
+					element.onchange = function() {
 
+						for(var i = 0; i < elementGroup.length; i++) {
+							
+							core_funcs['radio'].check(elementGroup[i]);
+
+						}
+
+					}
+
+				}, 
+
+				check: function(element) {
+
+					var marker = element.parentNode.getElementsByClassName('radio-mark')[0];
+
+					if(element.checked) {
+
+						marker.classList.add('active');
+
+					} else {
+
+						marker.classList.remove('active');
+
+					}						
 
 				}
 
