@@ -8,7 +8,15 @@
 
 		self.reSkin = function(element) {
 
-			core_funcs[element].handler();
+			if(element) {
+
+				core_funcs[element].handler();
+				
+			} else {
+
+				core_funcs.initialise();
+
+			}
 
 			return 'All wrapped up, slick!';
 
