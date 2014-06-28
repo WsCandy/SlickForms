@@ -112,7 +112,7 @@ form {
 	height: 100%;
 	background: #a8e6f6;
 	-webkit-transition: 0.5s;
-	-webkit-transform: scale(0.25);
+	-webkit-transform: scale(3);
 
 	&.active {
 
@@ -154,7 +154,7 @@ form {
 	border-radius: 50%;
 	opacity: 0;
 	-webkit-transition: 0.5s;
-	-webkit-transform: scale(0.25);
+	-webkit-transform: scale(3);
 
 	&.active {
 

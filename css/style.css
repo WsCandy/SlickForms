@@ -74,7 +74,7 @@ form {
   height: 100%;
   background: #a8e6f6;
   -webkit-transition: 0.5s;
-  -webkit-transform: scale(0.25); }
+  -webkit-transform: scale(3); }
   .checkbox-mark.active {
     opacity: 1;
     -webkit-transform: scale(1); }
@@ -102,7 +102,7 @@ form {
   border-radius: 50%;
   opacity: 0;
   -webkit-transition: 0.5s;
-  -webkit-transform: scale(0.25); }
+  -webkit-transform: scale(3); }
   .radio-mark.active {
     opacity: 1;
     -webkit-transform: scale(1); }
