@@ -27,7 +27,7 @@ SlickForms has one method built in for use, this can be called by simply running
 
 	slick.reSkin();
 
-This method will re skin all elements on the page IMMEDIANTELY, the method also accepts a parameter which lets you specify which element you would like to re-skin if you don't want to do all form elements on the page.
+This method will re skin all elements on the page immediately, the method also accepts a parameter which lets you specify which element you would like to re-skin if you don't want to do all form elements on the page.
 
 	slick.reSkin('select');
 	slick.reSkin('checkbox');
