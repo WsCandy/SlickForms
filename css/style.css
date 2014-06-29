@@ -64,7 +64,7 @@ form {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     top: 0;
     left: 0; }
 
@@ -91,7 +91,7 @@ form {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     top: 0;
     left: 0; }
 
