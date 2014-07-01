@@ -43,6 +43,7 @@
 						if(elements[i].parentNode.classList.contains('select-wrap')) continue;
 
 						core_funcs['select'].wrap(elements[i]);
+						core_funcs['select'].check(elements[i]);
 						core_funcs['select'].bind(elements[i]);
 
 					}
@@ -59,28 +60,34 @@
 
 					element.onchange = function() {
 
-						var elementValue = element.value;
-						var selectedOption = element.getElementsByTagName('option');
+						core_funcs['select'].check('element');
 
-						for(var i = 0; i < selectedOption.length; i++) {
+					}
 
-							if(selectedOption[i].value != elementValue) {
+				},
 
-								continue;
-								
-							} else {
+				check: function(element) {
 
-								var optionText = selectedOption[i].textContent || selectedOption[i].innerText;
+					var elementValue = element.value;
+					var selectedOption = element.getElementsByTagName('option');
 
-							}
+					for(var i = 0; i < selectedOption.length; i++) {
+
+						if(selectedOption[i].value != elementValue) {
+
+							continue;
+							
+						} else {
+
+							var optionText = selectedOption[i].textContent || selectedOption[i].innerText;
 
 						}
 
-						var dummySelect = element.parentNode.getElementsByClassName('select')[0];
-
-						dummySelect.innerHTML = optionText;
-
 					}
+
+					var dummySelect = element.parentNode.getElementsByClassName('select')[0];
+
+					dummySelect.innerHTML = optionText;
 
 				}
 
