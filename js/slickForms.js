@@ -60,7 +60,7 @@
 
 					element.onchange = function() {
 
-						core_funcs['select'].check('element');
+						core_funcs['select'].check(element);
 
 					}
 
