@@ -59,9 +59,26 @@
 
 					element.onchange = function() {
 
+						var elementValue = element.value;
+						var selectedOption = element.getElementsByTagName('option');
+
+						for(var i = 0; i < selectedOption.length; i++) {
+
+							if(selectedOption[i].value != elementValue) {
+
+								continue;
+								
+							} else {
+
+								var optionText = selectedOption[i].textContent || selectedOption[i].innerText;
+
+							}
+
+						}
+
 						var dummySelect = element.parentNode.getElementsByClassName('select')[0];
 
-						dummySelect.innerHTML = String(element.value);
+						dummySelect.innerHTML = optionText;
 
 					}
 
