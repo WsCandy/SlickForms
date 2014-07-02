@@ -106,3 +106,30 @@ form {
   .radio-mark.active {
     opacity: 1;
     -webkit-transform: scale(1); }
+
+.file-wrap {
+  position: relative;
+  overflow: hidden; }
+  .file-wrap input {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0; }
+    .file-wrap input:hover {
+      cursor: pointer; }
+
+.file-button {
+  padding: 10px;
+  text-align: center;
+  background: #a8e6f6;
+  float: left;
+  color: white; }
+
+.file-label {
+  padding: 10px;
+  float: left; }
