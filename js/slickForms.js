@@ -207,18 +207,60 @@
 
 				handler: function() {
 
+					var elements = document.getElementsByTagName('input');
 
+					for (var i = 0; i < elements.length; i++) {
+
+						if(elements[i].getAttribute('type') != 'file' || elements[i].parentNode.classList.contains('file-wrap')) continue;
+
+						core_funcs['file'].wrap(elements[i]);
+						core_funcs['file'].check(elements[i]);
+						core_funcs['file'].bind(elements[i]);
+
+					}
 
 				},
 
-				wrap: function() {
+				wrap: function(element) {
 
-
+					element.outerHTML = '<div class="file-wrap">'+element.outerHTML+'<div class="file-button">Choose File</div><div class="file-label"></div></div>';
 
 				},
 
-				bind: function() {
+				bind: function(element) {
 
+					element.onchange = function() {
+
+						core_funcs['file'].check(element);
+
+					}
+
+				},
+
+				check: function(element) {
+
+					var label = element.parentNode.getElementsByClassName('file-label')[0];
+					var button = element.parentNode.getElementsByClassName('file-button')[0]
+
+					if(!element.value) {
+
+						label.innerHTML = 'Please select a file(s)';
+
+					} else {
+
+						label.innerHTML = '';
+						button.innerHTML = 'Change file(s)';
+
+						for(var i = 0; i < element.files.length; i++) {
+
+							var fileLabel = document.createElement('span');
+								fileLabel.innerHTML = element.files[i].name + (i != element.files.length -1 ? ',' : '');
+
+							label.appendChild(fileLabel);
+
+						}
+						
+					}
 
 
 				}
