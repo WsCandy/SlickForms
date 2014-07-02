@@ -255,7 +255,7 @@
 						for(var i = 0; i < element.files.length; i++) {
 
 							var fileLabel = document.createElement('span');
-								fileLabel.innerHTML = element.files[i].name + (i != element.files.length -1 ? ',' : '');
+								fileLabel.innerHTML = element.files[i].name + (i != element.files.length -1 ? ', ' : '');
 
 							label.appendChild(fileLabel);
 
