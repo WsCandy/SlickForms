@@ -223,7 +223,7 @@
 
 				wrap: function(element) {
 
-					element.outerHTML = '<div class="file-wrap">'+element.outerHTML+'<div class="file-button">Choose File</div><div class="file-label"></div></div>';
+					element.outerHTML = '<div class="file-wrap">'+element.outerHTML+'<div class="file-button">Choose file(s)</div><div class="file-label"></div></div>';
 
 				},
 
@@ -245,6 +245,7 @@
 					if(!element.value) {
 
 						label.innerHTML = 'Please select a file(s)';
+						button.innerHTML = 'Choose file(s)';
 
 					} else {
 
