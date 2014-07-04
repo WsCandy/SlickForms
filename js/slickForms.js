@@ -2,6 +2,8 @@
 	
 	'use strict';
 
+	var version = '1.0';
+
 	function slickForms() {
 
 		this.reSkin = function(element) {
