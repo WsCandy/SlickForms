@@ -36,6 +36,7 @@ This method will re skin all elements on the page immediately, the method also a
 	slick.reSkin('select');
 	slick.reSkin('checkbox');
 	slick.reSkin('radio');
+	slick.reSkin('file');
 
 Style Guide
 ---
