@@ -1,7 +1,11 @@
-SlickForms v1.0
+SlickForms v1.0.1
 ==========
 
-A small, fast JS package that will allow you to sex up all your form elements with CSS.
+Corrected an install path in the bower.json file.
+
+#####Release History
+
+https://github.com/WsCandy/SlickForms/releases
 
 Installation
 ---
