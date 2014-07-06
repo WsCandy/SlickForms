@@ -42,7 +42,7 @@
 
     "install" : {
 
-        "assets/slickForms.js" : "httpdocs/assets/js/lib"
+        "js/slickForms.js" : "httpdocs/assets/js/lib"
 
     }
 
