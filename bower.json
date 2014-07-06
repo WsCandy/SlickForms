@@ -1,0 +1,49 @@
+{
+
+    "name": "Slick Forms",
+    "authors": [
+   
+        "Samuel Woodbridge"
+
+    ],
+
+    "description": "JS form styling",
+    "main": "assets/slickForms.js",
+    "repository": {
+
+        "type" : "git",
+        "url" : "https://github.com/WsCandy/SlickForms.git"
+
+    },
+
+    "keywords": [
+
+        "Form Styling",
+        "Forms",
+        "JS",
+        "Propeller",
+        "propcomm",
+        "propeller",
+        "propcom"
+
+    ],
+
+    "license": "Public",
+    "homepage": "https://github.com/WsCandy/SlickForms.git",
+
+    "ignore" : [
+
+        "/sass/",
+        "/css/",
+        "/img/",
+        "/index.html"
+
+    ],
+
+    "install" : {
+
+        "assets/slickForms.js" : "httpdocs/assets/js/lib"
+
+    }
+
+}
