@@ -10,6 +10,10 @@ SlickForms has no dependencies which makes it fast to execute. (Everything shoul
 
 SlickForms is dead easy to install, simply download the slickForms.js file and reference it in your document. Everything has been done for you so it's just left to you to style up the elements created with CSS. Due to having no dependencies you can call slickForms.js before any other scripts on the page, this will ensure incredibly fast initialisation times.
 
+If you're using bower or ppm you can simply run 
+
+	bower install propcom-slick
+
 Supported elements:
 
 - Selects
