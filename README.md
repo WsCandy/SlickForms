@@ -64,4 +64,10 @@ Below you will find a list of all elements that you need to style with CSS!
 	.radio-mark
 	.radio-mark active
 
+	// File Input
+
+	.file-wrap
+	.file-button
+	.file-label
+
 Check out the .scss file in the sass directory for a full example.
