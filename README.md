@@ -1,7 +1,11 @@
-SlickForms v1.0.1
+SlickForms v1.1.0
 ==========
 
-Corrected an install path in the bower.json file.
+Added support for a place holder value on selects! To use simply do the following:
+
+	data-label="Your text!"
+
+Place it on the select element itself.
 
 #####Release History
 
