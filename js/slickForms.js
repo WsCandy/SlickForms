@@ -45,7 +45,15 @@
 						if(elements[i].parentNode.classList.contains('select-wrap')) continue;
 
 						core_funcs['select'].wrap(elements[i]);
-						core_funcs['select'].setLabel(elements[i], elements[i].getAttribute('data-label'));
+						if(elements[i].getAttribute('data-label')) {
+
+							core_funcs['select'].setLabel(elements[i], elements[i].getAttribute('data-label'));
+
+						} else {
+
+							core_funcs['select'].check(elements[i]);
+
+						}
 						core_funcs['select'].bind(elements[i]);
 
 					}
