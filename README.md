@@ -1,5 +1,7 @@
-SlickForms v1.1.0
+SlickForms v1.1.1
 ==========
+
+Fixed a bug that caused the script to crash if a label wasn't set for selects.
 
 Added support for a place holder value on selects! To use simply do the following:
 
