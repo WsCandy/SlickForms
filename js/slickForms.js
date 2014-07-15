@@ -97,8 +97,6 @@
 
 					core_funcs['select'].setLabel(element, optionText);
 
-					// element.blur();
-
 				},
 
 				setLabel: function(element, value) {
