@@ -1,13 +1,7 @@
-SlickForms v1.1.1
+SlickForms v1.2.0
 ==========
 
-Fixed a bug that caused the script to crash if a label wasn't set for selects.
-
-Added support for a place holder value on selects! To use simply do the following:
-
-	data-label="Your text!"
-
-Place it on the select element itself.
+Added in full IE9 support
 
 #####Release History
 
@@ -33,6 +27,15 @@ Supported elements:
 All supported elements retain their default HTML usage, e.g. labels with the "for" attribute.
 
 Future version will include "file" input type.
+
+Select Labels
+---
+
+To use simply do the following:
+
+	data-label="Your text!"
+
+Place it on the select element itself.
 
 Methods
 ---
