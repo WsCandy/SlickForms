@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-	var version = '1.1.0';
+	var version = '1.2.0';
 
 	function slickForms() {
 
@@ -42,7 +42,7 @@
 
 					for (var i = 0; i < elements.length; i++) {
 
-						if(elements[i].parentNode.classList.contains('select-wrap')) continue;
+						if(elements[i].parentNode.classList ? (elements[i].parentNode.classList.contains('select-wrap')) : (new RegExp('(^| )' + 'select-wrap' + '( |$)', 'gi').test(elements[i].parentNode.className))) continue;
 
 						core_funcs['select'].wrap(elements[i]);
 						if(elements[i].getAttribute('data-label')) {
@@ -97,6 +97,8 @@
 
 					core_funcs['select'].setLabel(element, optionText);
 
+					// element.blur();
+
 				},
 
 				setLabel: function(element, value) {
@@ -115,7 +117,7 @@
 
 					for (var i = 0; i < elements.length; i++) {
 
-						if(elements[i].getAttribute('type') != 'checkbox' || elements[i].parentNode.classList.contains('checkbox-wrap')) continue;
+						if((elements[i].getAttribute('type') != 'checkbox') || (elements[i].parentNode.classList ? (elements[i].parentNode.classList.contains('checkbox-wrap')) : (new RegExp('(^| )' + 'checkbox-wrap' + '( |$)', 'gi').test(elements[i].parentNode.className)))) continue;
 
 						core_funcs['checkbox'].wrap(elements[i]);
 						core_funcs['checkbox'].check(elements[i]);
@@ -167,7 +169,7 @@
 
 					for(var i = 0; i < elements.length; i++) {
 
-						if(elements[i].getAttribute('type') != 'radio' || elements[i].parentNode.classList.contains('radio-wrap')) continue;						
+						if((elements[i].getAttribute('type') != 'radio') || (elements[i].parentNode.classList ? (elements[i].parentNode.classList.contains('radio-wrap')) : (new RegExp('(^| )' + 'radio-wrap' + '( |$)', 'gi').test(elements[i].parentNode.className)))) continue;						
 
 						core_funcs['radio'].wrap(elements[i]);
 						core_funcs['radio'].check(elements[i]);
@@ -225,7 +227,7 @@
 
 					for (var i = 0; i < elements.length; i++) {
 
-						if(elements[i].getAttribute('type') != 'file' || elements[i].parentNode.classList.contains('file-wrap')) continue;
+						if((elements[i].getAttribute('type') != 'file') || (elements[i].parentNode.classList ? (elements[i].parentNode.classList.contains('file-wrap')) : (new RegExp('(^| )' + 'file-wrap' + '( |$)', 'gi').test(elements[i].parentNode.className)))) continue;
 
 						core_funcs['file'].wrap(elements[i]);
 						core_funcs['file'].check(elements[i]);
