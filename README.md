@@ -23,10 +23,9 @@ Supported elements:
 - Selects
 - Check Boxes
 - Radio Buttons
+- File input types
 
-All supported elements retain their default HTML usage, e.g. labels with the "for" attribute.
-
-Future version will include "file" input type.
+All supported elements retain their default HTML usage, e.g. labels with the "for" attribute. File inputs will output all attached files names if "multiple" is used.
 
 Select Labels
 ---
