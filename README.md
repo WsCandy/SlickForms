@@ -1,7 +1,7 @@
-SlickForms v1.2.0
+SlickForms v1.2.1
 ==========
 
-Added in full IE9 support
+Updated bower.json to include the css reset form slick form elements.
 
 #####Release History
 
