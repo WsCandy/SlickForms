@@ -42,7 +42,8 @@
 
     "install" : {
 
-        "js/slickForms.js" : "httpdocs/assets/js/lib"
+        "js/slickForms.js" : "httpdocs/assets/js/lib",
+        "sass/form-reset.scss" : "httpdocs/assets/sass/modules"
 
     }
 
