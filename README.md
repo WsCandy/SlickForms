@@ -1,4 +1,4 @@
-SlickForms v1.2.1
+SlickForms v1.2.2
 ==========
 
 Updated bower.json to include the css reset form slick form elements.
