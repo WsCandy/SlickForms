@@ -33,7 +33,6 @@
 
     "ignore" : [
 
-        "/sass/",
         "/css/",
         "/img/",
         "/index.html"
