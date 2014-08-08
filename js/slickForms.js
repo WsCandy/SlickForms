@@ -264,7 +264,7 @@
 					} else {
 
 						label.innerHTML = '';
-						button.innerHTML = 'Change file(s)';
+						button.innerHTML = (element.files.length > 1 ? 'Change file(s)' : 'Change file');
 
 						for(var i = 0; i < element.files.length; i++) {
 
