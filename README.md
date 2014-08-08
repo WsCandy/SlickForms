@@ -1,7 +1,7 @@
-SlickForms v1.2.2
+SlickForms v1.2.3
 ==========
 
-Updated bower.json to include the css reset form slick form elements.
+Changed the button text on the file input. The text now reflects how many files you have selected.
 
 #####Release History
 
