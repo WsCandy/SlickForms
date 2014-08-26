@@ -101,7 +101,7 @@
 
 				setLabel: function(element, value) {
 
-					element.parentNode.getElementsByClassName('select')[0].innerHTML = value;
+					element.parentNode.querySelectorAll('.select')[0].innerHTML = value;
 					
 				} 
 
@@ -143,7 +143,7 @@
 
 				check: function(element) {
 
-					var marker = element.parentNode.getElementsByClassName('checkbox-mark')[0];
+					var marker = element.parentNode.querySelectorAll('.checkbox-mark')[0];
 
 					if(element.checked) {
 
@@ -201,7 +201,7 @@
 
 				check: function(element) {
 
-					var marker = element.parentNode.getElementsByClassName('radio-mark')[0];
+					var marker = element.parentNode.querySelectorAll('.radio-mark')[0];
 
 					if(element.checked) {
 
@@ -253,8 +253,8 @@
 
 				check: function(element) {
 
-					var label = element.parentNode.getElementsByClassName('file-label')[0];
-					var button = element.parentNode.getElementsByClassName('file-button')[0]
+					var label = element.parentNode.querySelectorAll('.file-label')[0];
+					var button = element.parentNode.querySelectorAll('.file-button')[0]
 
 					if(!element.value) {
 
@@ -288,10 +288,25 @@
 
 	}
 
-	document.addEventListener('DOMContentLoaded', function() {
+	if (document.addEventListener) {
+ 
+		document.addEventListener('DOMContentLoaded', function() {
 
-		window.slick = new slickForms();
-		
-	});
+			window.slick = new slickForms();
+
+		});
+
+	} else {
+
+		document.attachEvent('onreadystatechange', function() {
+
+			if (document.readyState === 'interactive') {
+
+				slickForms();
+				
+			}
+
+		});
+	}
 
 })();
