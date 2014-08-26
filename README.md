@@ -1,7 +1,7 @@
-SlickForms v1.2.3
+SlickForms v1.2.4
 ==========
 
-Changed the button text on the file input. The text now reflects how many files you have selected.
+IE8 Implementation.
 
 #####Release History
 
