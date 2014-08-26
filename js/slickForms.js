@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-	var version = '1.2.3';
+	var version = '1.2.4';
 
 	function slickForms() {
 
