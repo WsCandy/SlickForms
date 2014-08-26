@@ -12,6 +12,7 @@
 		width: 100%;
 		z-index: 2;
 		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		display: block;
 		-webkit-appearance: none;
 
@@ -45,6 +46,7 @@
 	input {
 
 		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		height: 100%;
 		width: 100%;
 		position: absolute;
@@ -72,6 +74,7 @@
 		bottom: 0;
 		right: 0;
 		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 
 		&:hover {
 
